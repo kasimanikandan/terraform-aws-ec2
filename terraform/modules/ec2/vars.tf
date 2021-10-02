@@ -11,5 +11,3 @@ variable "subnet_id" {}
 variable "env" {}
 
 variable "component" {}
-
-variable "startup_script" {}

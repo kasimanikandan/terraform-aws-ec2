@@ -4,7 +4,7 @@ resource "aws_instance" "ec2_instance" {
   instance_type = "${var.instance_type}"
   subnet_id = "${var.subnet_id}"
 
-  user_data = "${var.startup_script}"
+  user_data = file("${path.module}/user_data/startup.sh")
 
   tags = {
     Name = "EC2 instance"

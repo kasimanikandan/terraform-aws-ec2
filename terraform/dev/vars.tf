@@ -12,8 +12,4 @@ variable "ami_id" {default = "ami-0210560cedcb09f07"}
 variable "env" {default = "dev"}
 variable "component" {default = "web"}
 
-variable "startup_script" {
-  type = ""
-  default = file()
-}
 

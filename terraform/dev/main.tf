@@ -21,5 +21,4 @@ module "dev_env_ec2" {
   subnet_id = "${module.dev_env_vpc.subnet_id}"
   env ="${var.env}"
   component = "${var.component}"
-  startup_script = "${var.startup_script}"
 }
