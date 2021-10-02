@@ -1,6 +1,6 @@
 variable "region" {default = "ap-southeast-2"}
-variable "access_key" {default = "AKIAZW4NVLS642DXPS6Q"}
-variable "secret_key" {default = "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"}
+variable "access_key" {default = ""}
+variable "secret_key" {default = ""}
 
 
 variable "tenancy" { default = "default"  }
@@ -12,4 +12,8 @@ variable "ami_id" {default = "ami-0210560cedcb09f07"}
 variable "env" {default = "dev"}
 variable "component" {default = "web"}
 
+variable "startup_script" {
+  type = ""
+  default = file()
+}
 
